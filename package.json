@@ -1,6 +1,6 @@
 {
   "name": "@upsided/prompts",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Lightweight, beautiful and user-friendly prompts, now with colorette!",
   "license": "MIT",
   "repository": "upsided/colorette-prompts",
