@@ -1,6 +1,6 @@
 {
   "name": "@upsided/prompts",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Lightweight, beautiful and user-friendly prompts, now with colorette!",
   "license": "MIT",
   "repository": "upsided/colorette-prompts",
@@ -13,7 +13,8 @@
   },
   "files": [
     "lib",
-    "index.js"
+    "index.js",
+    "index.d.ts"
   ],
   "scripts": {
     "start": "node lib/index.js",
@@ -35,6 +36,7 @@
     "interact"
   ],
   "dependencies": {
+    "@upsided/prompts": "^1.0.1",
     "colorette": "^2.0.20",
     "sisteransi": "^1.0.5"
   },
