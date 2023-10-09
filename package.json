@@ -1,10 +1,11 @@
 {
-  "name": "prompts",
-  "version": "2.4.2",
-  "description": "Lightweight, beautiful and user-friendly prompts",
+  "name": "@upsided/prompts",
+  "version": "1.0.0",
+  "description": "Lightweight, beautiful and user-friendly prompts, now with colorette!",
   "license": "MIT",
-  "repository": "terkelg/prompts",
+  "repository": "upsided/colorette-prompts",
   "main": "index.js",
+  "types": "index.d.ts",
   "author": {
     "name": "Terkel Gjervig",
     "email": "terkel@terkel.com",
@@ -34,12 +35,12 @@
     "interact"
   ],
   "dependencies": {
-    "kleur": "^4.0.1",
+    "colorette": "^2.0.20",
     "sisteransi": "^1.0.5"
   },
   "devDependencies": {
     "@types/node": "^18.11.17",
-    "tap-spec": "^5.0.0",
+    "tap-spec": "^2.2.2",
     "tape": "^4.13.3",
     "typescript": "^4.9.4"
   },

@@ -1,18 +1,15 @@
-<p align="center">
-  <img src="https://github.com/terkelg/prompts/raw/master/prompts.png" alt="Prompts" width="500" />
-</p>
-
-<h1 align="center">❯ Prompts</h1>
+<h1 align="center">Prompts</h1>
 
 <p align="center">
-  <a href="https://npmjs.org/package/prompts">
-    <img src="https://img.shields.io/npm/v/prompts.svg" alt="version" />
+  <a href="https://www.npmjs.com/package/@upsided/prompts">
+    <img alt="npm (scoped)" src="https://img.shields.io/npm/v/%40upsided/prompts">
   </a>
   <a href="https://github.com/terkelg/prompts/actions/workflows/test.yml">
     <img src="https://github.com/terkelg/prompts/actions/workflows/test.yml/badge.svg" alt="test" />
   </a>
   <a href="https://npmjs.org/package/prompts">
-    <img src="https://img.shields.io/npm/dm/prompts.svg" alt="downloads" />
+    <img alt="npm" src="https://img.shields.io/npm/dw/%40upsided/prompts">
+
   </a>
   <!---
    <a href="https://packagephobia.now.sh/result?p=prompts">
@@ -23,6 +20,7 @@
 
 <p align="center">
   <b>Lightweight, beautiful and user-friendly interactive prompts</b><br />
+  <b>Modified by <a href="https://github.com/Upsidedly">upsided</a> to use colorette instead of kleur!</b><br />
   <sub>>_ Easy to use CLI prompts to enquire users for information▌</sub>
 </p>
 
@@ -398,15 +396,15 @@ The function signature is `(val, values)`, where `val` is the value from the cur
 Type: `Function`
 
 Callback for when the prompt is rendered.
-The function receives [kleur](https://github.com/lukeed/kleur) as its first argument and `this` refers to the current prompt.
+The function receives [colorette](https://github.com/jorgebucaran/colorette) as its first argument and `this` refers to the current prompt.
 
 **Example:**
 ```js
 {
   type: 'number',
   message: 'This message will be overridden',
-  onRender(kleur) {
-    this.msg = kleur.cyan('Enter a number');
+  onRender(colorette) {
+    this.msg = colorette.cyan('Enter a number');
   }
 }
 ```
